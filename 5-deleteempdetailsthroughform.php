@@ -10,6 +10,7 @@ insert into empdetails values(2, 'Gowtham thulasi', 60000);
 insert into empdetails values(3, 'Anjali Suresh', 70000);
 insert into empdetails values(4, 'Karthik', 80000);
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,8 +37,15 @@ insert into empdetails values(4, 'Karthik', 80000);
                 echo "record not deleted".mysqli_error($conn);
             }
             
-            
-        }
+            echo "<h1>after Deleted employee details </h1>";
+            $qry1="select * from empdetails";
+            $result=mysqli_query($conn, $qry1);
+                while($row=mysqli_fetch_assoc($result)){
+                    echo "Empid : ".$row['Empid']."<br>";
+                    echo "Empname : ".$row['Empname']."<br>";
+                    echo "Salary : ".$row['Salary']."<br><br>";
+                }
+             }
     ?>
 </body>
 </html>

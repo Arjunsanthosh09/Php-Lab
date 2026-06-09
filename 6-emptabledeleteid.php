@@ -23,7 +23,7 @@ insert into empdetails values(4, 'Karthik', 80000);
         <button type="submit" name="submit" id="submit">Submit</button>
     </form>
     <?php
-        $conn= mysqli_connect("localhost", "root", "","emp100");
+        $conn= mysqli_connect("localhost", "root", "","emp");
         if(!$conn){
             die("Error connecting".mysqli_connect_error());
         }

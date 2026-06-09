@@ -37,7 +37,17 @@ insert into empdetails values(4, 'Karthik', 80000);
                 echo "record not updated".mysqli_error($conn);
             }
             
-            
+            echo "<h1>Updated employee details </h1>";
+
+            $qry1="select * from empdetails where Empid='$id'";
+            $result=mysqli_query($conn, $qry1);
+            if(mysqli_num_rows($result)>0){
+                while($row=mysqli_fetch_assoc($result)){
+                    echo "Empid : ".$row['Empid']."<br>";
+                    echo "Empname : ".$row['Empname']."<br>";
+                    echo "Salary : ".$row['Salary']."<br><br>";
+                }
+             }
         }
     ?>
 </body>
