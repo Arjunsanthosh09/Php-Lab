@@ -1,7 +1,7 @@
 <!-- 7. Develop a PHP program to create ‘Dept’ table with following fields (Deptid. Deptname,).
 Accept the data through form elements. -->
 
-create database if not exist department100;
+create database department100;
 use department100;
 create table dept(Deptid int primary key, Deptname varchar(20));
 
