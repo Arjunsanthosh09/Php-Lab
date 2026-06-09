@@ -10,8 +10,7 @@ insert into details values(3, 'Anjali Suresh', 'Science', 95);
 insert into details values(4, 'Karthik', 'Science', 95);
 
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Document</title>
 </head>
