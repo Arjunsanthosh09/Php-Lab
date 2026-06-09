@@ -1,7 +1,7 @@
 <!-- 4. Develop a PHP program to accept the ‘Employee’ details (Empid, Empname, Emptype)
 through form elements and display the contents. -->
 
-create database if not exist Employee100;
+create database  Employee100;
 use Employee100;
 create table details(Empid int primary key, Empname varchar(20), Emptype varchar(20));
 
@@ -23,7 +23,7 @@ create table details(Empid int primary key, Empname varchar(20), Emptype varchar
         
     </form>
     <?php
-        $conn= mysqli_connect("localhost", "root", "","Employee");
+        $conn= mysqli_connect("localhost", "root", "","Employee100");
         if(!$conn){
             die("error connecting the database...".mysqli_connect_error());
             

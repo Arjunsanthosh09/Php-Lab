@@ -1,7 +1,7 @@
 <!-- 1.	Develop a PHP program to accept the ‘student’ details (Rollno, Name, Subject, Mark). 
 Perform edit operation of the mark of a particular student. -->
 
-create database  if not exist student32;
+create database student32;
 use student32;
 create table details(Rollno int primary key, Name varchar(20), Subject varchar(20), Mark int);
 insert into details values(1, 'Arjun Santhosh', 'Math', 85);

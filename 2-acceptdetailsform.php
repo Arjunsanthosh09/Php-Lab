@@ -1,7 +1,7 @@
 <!-- 2. Develop a PHP program to accept the ‘student’ details (Rollno, Name, Course) through
 form elements and display the contents. -->
 
-CREATE DATABASE IF NOT EXISTS Student100;
+CREATE DATABASE  Student100;
 use Student100;
 create table details(rollno int primary key, name varchar(20), course varchar(20));
 
